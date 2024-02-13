@@ -11,39 +11,87 @@
     <header>
 
     </header> 
-    <main>
-        <div class="flex">
+    <main class="">
+        <div class="flex gap-10">
             <!-- card div  -->
             <div class="flex flex-1">
                 <div class="card  bg-base-100 shadow-xl">
                     <figure><img src="./images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
-                      <h2 class="text-center">Triangle</h2>
-                      <p class="text-center text-2">Area (A) =
-                        0.5     b
-                        h
+                      <h2 class=" text-3xl text-center">Triangle</h2>
+                      <p class=" text-3xl text-center text-2">Area (A) =
+                        0.5 x b x h
                     </p>
                     <div class="flex">
-                        <input id="inpute-base" class="w-16 p-3 outline-none" type="text" placeholder="b"><span class="p-3">cm</span>
-                        <input id="input-height" class="w-16 p-3 outline-none" type="text" placeholder="h"><span class="p-3">cm</span>
+                        <input id="inpute-base" class="w-20 p-3 outline-none" type="text" placeholder="b"><span class="p-3">cm</span>
+                        <input id="input-height" class="w-20 p-3 outline-none" type="text" placeholder="h"><span class="p-3">cm</span>
                     </div>
                       <div class="card-actions ">
                         <button style="transition: .3s;" onclick="coagulate()" class="btn bg-blue-400 text-white hover:bg-blue-400 hover:rounded-none  w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-             
-              
-               
-            
-            </div>
+                </div>
+              <!-- rectangle -->
+          <div class="flex flex-1 card  bg-base-100 shadow-xl">
+  <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
+  <div class="card-body">
+    <h2 class=" text-3xl text-center">Rectangle</h2>
+    <p class=" text-3xl text-center">Area (A) = W x I</p>
+   <div class="flex">
+     <!-- input length  -->
+     <input id="length-prosto" class="w-20 p-3 outline-none" type="text" name="" placeholder="length"><span class="p-3">cm</span>
+     <!-- input width  -->
+     <input class="w-20 p-3 outline-none" type="text" name="" id="rectangle-width" 
+     placeholder="width"><span class="p-3">cm</span>
+
+     
+
+   </div>
+   <div>
+    <p>Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
+   </div>
+    <div class="card-actions">
+      <button onclick="rectangleCalculateo()" class="btn bg-blue-400 text-white hover:bg-blue-400 hover:rounded-none  w-full">calculate</button>
+    </div>
+  </div>
+</div>
+
+  
+
             <!-- calculate div  -->
-            <div class="w-80 text-center border-2 border-gray-400 h-96">
+            <div class=" w-80 text-center border-2 border-gray-400 h-96">
                 <h3 class="text-3xl"> Area calculator</h3>
             </div>
+
         </div>
+        <div class="flex gap-10 mt-10">
+          <!-- Parallelogram -->
+          <div class="card  bg-base-100 shadow-xl">
+            <figure><img src="/images/parallelogram.png" alt="parallelogram" /></figure>
+            <div class="card-body">
+              <h2 class="text-center text-3xl">parallelogram</h2>
+              <p class="text-center text-3xl">Area (A) = b x h</p>
+              <div>
+                <!-- base  -->
+                <input class="w-20 p-3 outline-none" type="text" name="" id="parallelogram-base" placeholder="b"><span class="p-3">cm</span>
+                <!-- height  -->
+                <input onclick="paraheight()" class="w-20 p-3 outline-none" type="text" name="" id="parallelogram-height" placeholder="h"><span class="p-3">cm</span>
+              </div>
+              <div>
+                <p>Area: <span class="parallelogram-area">0</span>cm<span><sup>2</sup></span></p>
+              </div>
+              <div class="card-actions">
+                <button onclick="parallelgraminput()" class="btn bg-blue-400 text-white hover:bg-blue-400 hover:rounded-none  w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+        
+         </div>
     </main>   
 
     <script src="script/tryalgle.js"></script>
+    <script src="script/rectangle.js"></script>
+    <script src="script/parallelogram.js"></script>
 </body>
 </html>
