@@ -14,8 +14,8 @@
     <main class="">
         <div class="flex gap-10">
             <!-- card div  -->
-            <div class="flex flex-1">
-                <div class="card  bg-base-100 shadow-xl">
+            <div  class="flex flex-1">
+                <div style="transition: .4s;" class=" hover:bg-green-300 hover:text-black  card  bg-base-100 shadow-xl">
                     <figure><img src="./images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                       <h2 class=" text-3xl text-center">Triangle</h2>
@@ -33,7 +33,7 @@
                   </div>
                 </div>
               <!-- rectangle -->
-          <div class="flex flex-1 card  bg-base-100 shadow-xl">
+          <div style="transition: .4s;" class=" hover:bg-purple-300 hover:text-black flex flex-1 card  bg-base-100 shadow-xl">
   <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
   <div class="card-body">
     <h2 class=" text-3xl text-center">Rectangle</h2>
@@ -67,31 +67,74 @@
         </div>
         <div class="flex gap-10 mt-10">
           <!-- Parallelogram -->
-          <div class="card  bg-base-100 shadow-xl">
+          <div style="transition: .4s;" class=" hover:bg-emerald-300 hover:text-black card  bg-base-100 shadow-xl">
             <figure><img src="/images/parallelogram.png" alt="parallelogram" /></figure>
             <div class="card-body">
               <h2 class="text-center text-3xl">parallelogram</h2>
               <p class="text-center text-3xl">Area (A) = b x h</p>
-              <div>
+              <div  class="flex flex-1">
                 <!-- base  -->
                 <input class="w-20 p-3 outline-none" type="text" name="" id="parallelogram-base" placeholder="b"><span class="p-3">cm</span>
                 <!-- height  -->
                 <input onclick="paraheight()" class="w-20 p-3 outline-none" type="text" name="" id="parallelogram-height" placeholder="h"><span class="p-3">cm</span>
               </div>
-              <div>
+              <!-- <div>
                 <p>Area: <span class="parallelogram-area">0</span>cm<span><sup>2</sup></span></p>
-              </div>
+              </div> -->
               <div class="card-actions">
                 <button onclick="parallelgraminput()" class="btn bg-blue-400 text-white hover:bg-blue-400 hover:rounded-none  w-full">Calculate</button>
               </div>
             </div>
           </div>
-        
+
+          <!-- Rhombus -->
+          <div style="transition: .4s;" class="  hover:bg-pink-300 hover:text-black card  bg-base-100 shadow-xl">
+            <figure><img src="/images/rhombus.png" alt="Rhombus" /></figure>
+            <div class="card-body">
+              <h2 class="text-center text-3xl">Rhombus</h2>
+              <p class="text-center text-3xl">Area (A) = 0.5 x d1 x d2</p>
+              <div  class="flex flex-1">
+                <!-- base  -->
+                <input class="w-20 p-3 outline-none" type="text" name="" id="Rhombus-base" placeholder="b1"><span class="p-3">cm</span>
+                <!-- height  -->
+                <input class="w-20 p-3 outline-none" type="text" name="" id="Rhombus-height" placeholder="b2"><span class="p-3">cm</span>
+              </div>
+              <!-- <div>
+                <p>Area: <span class="Rhombus-area">0</span>cm<span><sup>2</sup></span></p>
+              </div> -->
+              <div class="card-actions">
+                <button onclick="rhombusf()" class=" btn bg-blue-400 text-white hover:bg-blue-400 hover:rounded-none  w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Pentagon -->
+          <div style="transition: .4s;" class="w-56  hover:bg-fuchsia-200 hover:text-black card  bg-base-100 shadow-xl">
+            <figure><img src="/images/pentagon.png" alt="Pentagon" /></figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl">Pentagon</h2>
+              <p class="text-center text-2xl">Area (A) = 0.5 x p x b</p>
+              <div class="flex flex-1">
+                <!-- base  -->
+                <input class="w-16 p-3 outline-none" type="text" name="" id="Pentagon-base" placeholder="b1"><span class="p-1">cm</span>
+                <!-- height  -->
+                <input class="w-16 p-3 outline-none" type="text" name="" id="Pentagon-height" placeholder="b2"><span class="p-1">cm</span>
+              </div>
+              <!-- <div>
+                <p>Area: <span class="Pentagon-area">0</span>cm<span><sup>2</sup></span></p>
+              </div> -->
+              <div class="card-actions">
+                <button onclick="pentagon()" class=" btn bg-blue-400 text-white hover:bg-blue-400 hover:rounded-none  w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+
          </div>
     </main>   
 
     <script src="script/tryalgle.js"></script>
     <script src="script/rectangle.js"></script>
     <script src="script/parallelogram.js"></script>
+    <script src="script/Rhombus.js"></script>
+    <script src="script/pantagon.js"></script>
 </body>
 </html>
